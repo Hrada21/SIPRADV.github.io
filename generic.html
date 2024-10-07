@@ -19,20 +19,18 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
+						<a href="index.html" class="logo">SIPRADV</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">This is Massively</a></li>
-							<li class="active"><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
+							<li><a href="index.html">INICIO</a></li>
+							<li class="active"><a href="generic.html">Bitácora</a></li>
+							<li><a href="elements.html">Informe</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							
 							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
@@ -43,12 +41,60 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h1>This is a<br />
-									Generic Page</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									
+									<h1>Bitacora<br />
+									</h1>
+									<p>Mayo 2 - Cambio de proyecto de un “Sistema de Reconocimiento Facial como ayuda escolar” a “Prototipo de un Sistema Integrado de Percepción y Respuesta Auditiva para Discapacitados Visuales”
+Actividad Realizada: Se investigaron las implicaciones legales relacionadas con la implementación de un sistema de reconocimiento facial, incluyendo el análisis de los aspectos técnicos involucrados en el escaneo de rostros.
+Resultados: Se decidió cambiar el enfoque del proyecto para evitar posibles conflictos legales asociados con el uso de reconocimiento facial y las preocupaciones sobre privacidad.
+Problemas Encontrados: Durante la investigación, se identificaron riesgos significativos relacionados con la privacidad de los datos personales y el cumplimiento de las normativas vigentes.
+Soluciones Propuestas: Se optó por modificar el alcance del proyecto, descartando la implementación de tecnologías de reconocimiento facial.
+Próximos Pasos: Investigar y seleccionar nuevos componentes, definir un enfoque alternativo con tecnologías adecuadas, y reajustar los objetivos del proyecto en función de los hallazgos y normativas legales aplicables.
+
+Junio 14 - Decisión de proyecto
+Actividad Realizada: Se decidió utilizar la cámara ESP32 para implementar un sistema de reconocimiento de imágenes, permitiendo que el prototipo identifique objetos en su entorno. Con base en esta identificación, se activará un sistema de respuesta auditiva para asistir al usuario.
+Resultados: Se prevé desarrollar un sistema de detección de imágenes que, en teoría, ayudará al usuario a desplazarse de manera más segura en su entorno.
+Problemas: Aunque la cámara ESP32 es un componente eficiente, su complejidad presenta un desafío significativo, especialmente en la creación de una base de datos capaz de identificar múltiples elementos. Esto podría extender el tiempo de desarrollo más allá del límite establecido.
+Próximos Pasos: Investigar más a fondo el funcionamiento de la ESP32-CAM. En caso de que el proceso resulte demasiado complicado, se evaluará el cambio a otro componente de detección más adecuado.
+
+Junio 20 - Reunión de avance sin mentor
+Actividad Realizada: Se presentó el proyecto, detallando los objetivos, la tecnología a utilizar, y el enfoque de desarrollo. Se definieron los componentes clave, como la cámara ESP32 para reconocimiento de imágenes y el sistema de respuesta auditiva para la interacción del usuario.
+Próximos Pasos: Se investigarán a fondo los componentes, con énfasis en la cámara ESP32 y su capacidad de reconocimiento de imágenes. La investigación incluirá análisis técnico, pruebas preliminares y la evaluación de alternativas si surgen limitaciones técnicas.
+
+Junio 27 - Reunión virtual con mentor
+Actividad Realizada: Discutimos la magnitud del proyecto, el costo estimado, la viabilidad técnica y el plan de ejecución dentro del plazo disponible. Evaluamos los materiales necesarios, su disponibilidad y las posibles fuentes de adquisición. También analizamos los recursos requeridos, tanto en hardware como en software, y el soporte técnico necesario durante el desarrollo.
+Resultados: Comprendimos mejor la magnitud del proyecto, especialmente en relación con la integración de la cámara ESP32-CAM.
+Problemas: El proceso de crear una base de datos adecuada para el ESP32-CAM se prevé como un desafío que podría ser largo y complejo.
+Soluciones: Investigaremos la viabilidad de utilizar una base de datos existente o, si no es factible, considerar la posibilidad de cambiar la cámara.
+Próximos Pasos: Explorar la disponibilidad de bases de datos públicas que puedan ser utilizadas con la cámara ESP32-CAM.
+
+Julio 12 - Reunion virtual con mentor
+Actividad Realizada: Discutimos el esquema del sistema y el sistema de audio para el proyecto.
+Resultados: Decidimos utilizar el DFPlayer Mini para implementar la respuesta auditiva del sistema.
+Problemas: Aún no estamos completamente seguros de cómo funciona el DFPlayer Mini y su integración con el sistema.
+Soluciones: Investigaremos el uso del DFPlayer Mini, evaluando sus ventajas y desventajas para entender mejor su funcionamiento y compatibilidad.
+Próximos Pasos: Buscar información detallada sobre la utilización del DFPlayer Mini, incluyendo tutoriales y documentación técnica para facilitar su implementación.
+
+Julio 13 - Investigación de la cámara ESP32
+Actividad Realizada: La investigación se centró en las capacidades de la cámara ESP32 para reconocimiento de imágenes y su posible uso en el proyecto, examinando sus especificaciones y ejemplos previos para optimizar su rendimiento. Esto estableció una base sólida para evaluar su adecuación.
+
+Julio 14 - Continuación de la investigación de la camara ESP32
+Actividad Realizada: La investigación de la cámara ESP32 se enfocó en mejorar el reconocimiento de imágenes y su precisión en distintas condiciones de luz, con pruebas en entornos complejos que facilitaron una mejor comprensión de su rendimiento.
+
+Julio 17 - Reunion con mentor & creación GitHub
+Actividad Realizada: Tras investigar, concluimos que el uso del ESP32 representa un desafío significativo debido al tiempo necesario para su calibración y configuración. Decidimos explorar alternativas, como los sensores ultrasónicos, mientras continuamos intentando que el ESP32 funcione adecuadamente. También discutimos la creación de un repositorio en GitHub para gestionar el código y la tecnología del proyecto, proporcionando así una plataforma accesible para compartir información y actualizaciones sobre el desarrollo.
+Resultados: Se inició la búsqueda de sensores ultrasónicos adecuados que cumplan con nuestras necesidades y se estableció la necesidad de un repositorio en GitHub para la gestión del proyecto.
+Problemas: El ESP32 requiere un tiempo considerable para calibrarse, lo cual no tenemos disponible en este momento.
+Soluciones: Explorar la utilización de otros componentes de detección, específicamente sensores ultrasónicos, y continuar evaluando la viabilidad del ESP32.
+
+Julio 18 - Investigación del sensor ultrasónico HC-SR04 y DFPlayer Mini
+Actividad Realizada: Decidimos utilizar el sensor ultrasónico HC-SR04 debido a su popularidad y facilidad de uso, lo que garantiza una amplia disponibilidad de recursos en línea para su implementación. Además, comenzamos a investigar sobre el DFPlayer Mini para integrarlo en el proyecto.
+Resultados: Encontramos varios tutoriales y recursos detallados sobre el funcionamiento del sensor ultrasónico HC-SR04, entre los cuales destacan:
+
+https://www.watelectronics.com/ultrasonic-sensor/
+https://robocraze.com/blogs/post/what-is-ultrasonic-sensor
+https://www.youtube.com/watch?v=0Lhgd8PQmn0
+.</p>
 								</header>
 								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
 								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
