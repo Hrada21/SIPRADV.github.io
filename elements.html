@@ -82,9 +82,75 @@ Así, esperamos mejorar la calidad de vida de las personas con discapacidades vi
 									<header>
 										<h2>Hipótesis</h2>
 										<p>La implementación de un sistema de detección de obstáculos basado en sensores ultrasónicos avanzados (GY-US42V2) y audio espacial direccional en dispositivos de asistencia para personas ciegas, permitirá mejorar significativamente su percepción espacial y reducir la incidencia de colisiones.</p>
-									</header>
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<header>
+
+										<strong>Metodología</strong>
+
+<strong>Materiales Necesarios:</strong>
+<ul>
+  <li>1 Arduino Nano</li>
+  <li>4 Sensores ultrasónicos GY-US42V2 (en modo UART)</li>
+  <li>1 Módulo DFPlayer Mini</li>
+  <li>1 Memoria de 32 gb</li>
+  <li>2 Altavoces mini de 3 watts</li>
+  <li>4 LEDs</li>
+  <li>4 Resistencias de 220Ω para los LEDs</li>
+  <li>1 Batería (incluye cargador)</li>
+  <li>Cables de conexión y una placa de pruebas (breadboard)</li>
+</ul>
+
+<strong>Conexión del Arduino Nano:</strong>
+<ul>
+  <li>Alimentar el Arduino Nano conectando la batería al pin Vin y GND.</li>
+  <li>Asegúrate de que todos los componentes comparten una conexión a GND para un circuito común.</li>
+</ul>
+
+<strong>Conexión de los Sensores GY-US42V2 (UART Mode):</strong>
+<ul>
+  <li>Conectar el pin VCC de cada sensor al pin 5V del Arduino Nano.</li>
+  <li>Conectar el pin GND de cada sensor al pin GND del Arduino Nano.</li>
+  <li>Para la comunicación UART, conectar los pines TX de los sensores al pin RX (D0) del Arduino Nano, y los pines RX de los sensores al pin TX (D1) del Arduino Nano.</li>
+  <li>Si es necesario, añadir resistencias o un divisor de voltaje en las líneas de UART para estabilizar la señal.</li>
+</ul>
+
+<strong>Conexión del DFPlayer Mini:</strong>
+<ul>
+  <li>Conectar el pin VCC del DFPlayer Mini al pin 5V del Arduino Nano.</li>
+  <li>Conectar el pin GND del DFPlayer Mini al pin GND del Arduino Nano.</li>
+  <li>Conectar el pin RX del DFPlayer Mini al pin digital D6 del Arduino Nano para la comunicación en serie.</li>
+  <li>Conectar los pines de salida de audio SPK+ y SPK- a los dos mini altavoces.</li>
+</ul>
+
+<strong>Conexión de los LEDs:</strong>
+<ul>
+  <li>Conectar el ánodo (pata larga) de cada LED a los pines digitales D2, D3, D4 y D5 del Arduino Nano.</li>
+  <li>Conectar una resistencia de 220Ω en serie entre cada ánodo de LED y el pin del Arduino para limitar la corriente.</li>
+  <li>Conectar el cátodo (pata corta) de cada LED a GND.</li>
+</ul>
+
+<strong>Programación del Arduino Nano:</strong>
+<ul>
+  <li>Escribir el código para que el Arduino Nano reciba datos de los sensores GY-US42V2 y controle los LEDs según la distancia detectada.</li>
+  <li>Añadir la lógica para que el DFPlayer Mini reproduzca un sonido si los sensores detectan un objeto en una distancia menor a un umbral específico (por ejemplo, 20 cm).</li>
+  <li>Asegurarse de que los LEDs enciendan cuando los sensores detecten objetos, proporcionando una indicación visual de que los sensores están funcionando correctamente.</li>
+</ul>
+
+<strong>Pruebas del Circuito:</strong>
+<ul>
+  <li>Alimentar el circuito y verificar que los sensores GY-US42V2 funcionan correctamente midiendo distancias.</li>
+  <li>Probar los LEDs para asegurarse de que se encienden cuando un objeto es detectado dentro del rango especificado.</li>
+  <li>Probar el DFPlayer Mini para asegurarse de que reproduce el sonido desde los altavoces cuando se detecta un objeto cercano.</li>
+  <li>Ajustar la programación o las conexiones según los resultados de las pruebas.</li>
+</ul>
+
+<strong>Optimización y Ajustes:</strong>
+<ul>
+  <li>Si es necesario, ajustar las posiciones de los sensores para evitar interferencias o mejorar la precisión de la detección.</li>
+  <li>Verificar el rendimiento de la batería y optimizar el consumo de energía si es posible.</li>
+</ul>
+
+<strong>Diseño del prototipo y programación</strong>
+<p>Se implementaron diversos códigos, con resultados variables. Se probaron diferentes métodos, cada uno con su correspondiente código (todos los códigos se encuentran en el anexo).</p>
+		
 										<h4>Heading with a Subtitle</h4>
 										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
 									</header>
