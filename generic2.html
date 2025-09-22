@@ -84,22 +84,30 @@
       
     </li>
 
-    <li><strong>Julio 12</strong><br>
-      <strong>Actividad</strong>: Reunión con mentor sobre el sistema de audio.<br>
-      <strong>Resultados</strong>: Decisión de usar el DFPlayer Mini para la respuesta auditiva.<br>
-      <strong>Problemas</strong>: Falta de conocimiento sobre el DFPlayer Mini.<br>
-      <strong>Soluciones</strong>: Investigar su funcionamiento y compatibilidad.
+    <li><strong>Día 5/Fecha: 8 de Mayo de 2025
+</strong><br>
+      <strong>Actividad</strong>: Abrimos el empaque en el cual vino el kit de Raspberry Pi 5 e instalamos el cooling device al Raspberry Pi.
+<br>
+      <strong>Resultados</strong>:  El hardware quedó protegido y listo.<br>
+      <strong>Problemas y Soluciones</strong>: Las instrucciones del empaque no fueron claras en cómo colocar la tapa de forma correcta, pero después lo logramos.
+<br>
+      
     </li>
 
-    <li><strong>Julio 13 y 14</strong><br>
-      <strong>Actividad</strong>: Investigación de la cámara ESP32, enfocándose en el reconocimiento de imágenes y su precisión en diversas condiciones de luz.
-    </li>
+    <li><strong>Día 6/Fecha: 11 de Mayo de 2025</strong><br>
+      <strong>Actividad</strong>: Configuramos el Raspberry Pi con Raspberry Pi Imager.
 
-    <li><strong>Julio 17</strong><br>
-      <strong>Actividad</strong>: Reunión con mentor. Se decidió explorar sensores ultrasónicos como alternativa a la ESP32.<br>
-      <strong>Resultados</strong>: Creación de un repositorio en GitHub y búsqueda de sensores ultrasónicos.<br>
-      <strong>Problemas</strong>: La ESP32 requiere mucho tiempo de calibración.<br>
-      <strong>Soluciones</strong>: Evaluar sensores ultrasónicos.
+
+    <li><strong>Día 7/Fecha: 12 de Mayo de 2025
+</strong><br>
+      <strong>Actividad</strong>:  Removimos el cover del raspberry Pi y seguimos los pasos de este tutorial:
+YOLO Object and Animal Recognition on the Raspberry Pi 5 | Beginner Python Guide
+.<br>
+      <strong>Resultados</strong>: El código no funcionó, no detectaba la PiCam 3.
+<br>
+      <strong>Problemas y Soluciones</strong>: Buscamos otro código que se utiliza con el PiCam 3 (en teoría debería de poder ser utilizado el PiCam 3 siempre que sea utilizando la librería lib cam).
+<br>
+      
     </li>
   </ul>
 </div>
@@ -109,58 +117,65 @@
 								<div class="image main"><img src="images/pic10.jpg" alt="" /></div>
 								<div style="text-align: left;">
   <ul>
-    <li><strong>Julio 18</strong><br>
-      <strong>Actividad Realizada</strong>: Decidimos utilizar el sensor ultrasónico HC-SR04 debido a su popularidad y facilidad de uso, lo que garantiza una amplia disponibilidad de recursos en línea para su implementación. Además, comenzamos a investigar sobre el DFPlayer Mini para integrarlo en el proyecto.<br>
-      <strong>Resultados</strong>: Encontramos varios tutoriales y recursos detallados sobre el funcionamiento del sensor ultrasónico HC-SR04, entre los cuales destacan:<br>
-      <a href="https://www.watelectronics.com/ultrasonic-sensor/">Watelectronics</a><br>
-      <a href="https://robocraze.com/blogs/post/what-is-ultrasonic-sensor">Robocraze</a><br>
-      <a href="https://www.youtube.com/watch?v=0Lhgd8PQmn0">YouTube</a><br>
-      Además, obtuvimos los esquemas y especificaciones de los sensores ultrasónicos que tenemos disponibles. También recopilamos información valiosa sobre el DFPlayer Mini de las siguientes fuentes:<br>
-      <a href="https://maker.pro/arduino/projects/how-to-use-the-dfmini-player-mp3-module-with-arduino">Maker.pro</a><br>
-      <a href="https://www.electronics-lab.com/project/mp3-player-using-arduino-dfplayer-mini/">Electronics Lab</a>
+    <li><strong>Día 8/Fecha: 13 de Mayo</strong><br>
+      <strong>Actividad Realizada</strong>: Ningún código que ponemos funcionaba, revisamos de vuelta el producto en Amazon y nos dimos cuenta que este no es compatible con Raspberry Pi 5 sino que es compatible con Raspberry Pi 4B para abajo.<br>
+      <strong>Resultados</strong>: El problema no era el código sino la cámara, específicamente compramos un “Arducam for Raspberry Pi Camera Module 3” pero no revisamos bien si era compatible.<br>
+
     </li>
-    <li><strong>Julio 19</strong><br>
-      <strong>Actividad Realizada</strong>: Desarrollamos un código que permite capturar fotos con la cámara ESP32 cada 2 segundos. Sin embargo, decidimos parar los avances relacionados con la cámara ESP32 para concentrarnos en la integración y desarrollo del sensor ultrasónico HC-SR04.
+    <li><strong>Día 9/Fecha: 14 de Mayo de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Pensamos que el problema puede ser la cámara ya que en nuevas versiones el cable con el cual se conecta el Picam 3 al Raspberry Pi 5 no es el mismo que el antiguo.
     </li>
-    <li><strong>Julio 20</strong><br>
-      <strong>Actividad Realizada</strong>: Con la ayuda de varios tutoriales y recursos sobre el funcionamiento del sensor, logramos obtener un código operativo para el sensor HC-SR04.<br>
-      <strong>Resultados</strong>: El sensor HC-SR04 está funcionando correctamente.<br>
-      <strong>Problemas</strong>: Es necesario adaptar el sistema para que funcione con múltiples sensores (cuatro en total).<br>
-      <strong>Próximos Pasos</strong>: Modificar el programa para que sea compatible con la integración de varios sensores HC-SR04.
+    <li><strong>Día 10/Fecha: 15 de Mayo de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Hoy volvimos a ver el tutorial y nos dimos cuenta que el cable no es el incorrecto, sino que la cámara es la incompatible.<br>
+      <strong>Resultados</strong>: El cable de la cámara no es el problema.<br>
+      <strong>Problemas y Soluciones</strong>: Seguir buscando algún lugar donde comprar el cable o sino encontrar alguna otra cámara.
+<br>
+      
     </li>
-    <li><strong>Julio 21</strong><br>
-      <strong>Actividad Realizada</strong>: Logramos adaptar el código originalmente diseñado para un sensor HC-SR04 para que funcione con tres sensores. Intentamos integrar el DFPlayer Mini para la reproducción de audio, pero el componente no está funcionando correctamente, lo cual podría deberse a problemas con la bocina utilizada.
+    <li><strong>Día 11/Fecha: 23 de Mayo de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Probamos la pixy cam 2 ya que Liang la tiene en su casa.
+
     </li>
-    <li><strong>Julio 24</strong><br>
-      <strong>Actividad Realizada</strong>: Investigamos un código alternativo para el DFPlayer Mini que emplea una metodología diferente. En caso de que este nuevo código no funcione, consideraremos probar con una bocina diferente.
+    <li><strong>Día 12/Fecha: 28 de Mayo de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Ya que no queremos esperar al envío de Estados Unidos a Panamá, tenemos que buscar alternativas dentro del país. El problema es que no hay modelos de PiCam en Panamá (o eso es lo que encontramos). 
     </li>
-    <li><strong>Julio 26</strong><br>
-      <strong>Actividad Realizada</strong>: Recibimos nuevas bocinas y una batería que proporcionará la potencia necesaria para el funcionamiento óptimo del sistema.<br>
-      <strong>Próximos Pasos</strong>: Probar el programa del DFPlayer Mini con las nuevas bocinas y la batería.
+    <li><strong>Día 13/Fecha: 1 de Junio de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Compramos la cámara Logitech C270 en Pana Compu pero tenemos que esperar para mañana.
+<br>
+      <
+    <li><strong>Día 14/Fecha: 2 de Junio de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Un miembro del equipo fue a retirar la nueva cámara.<br>
+      <strong>Resultados</strong>: Encontramos y compramos una cámara de reemplazo pero no la tenemos aún.<br>
+     
     </li>
-    <li><strong>Agosto 1</strong><br>
-      <strong>Actividad Realizada</strong>: Se discutieron aspectos del sensor ultrasónico, la plataforma del prototipo y la altura óptima para maximizar su efectividad. Se exploraron otros sensores ultrasónicos, como el GY-US42V2.<br>
-      <strong>Resultados</strong>: Se estableció la plataforma y la altura para el montaje de los sensores ultrasónicos.<br>
-      <strong>Próximos Pasos</strong>: Investigar más sobre los sensores GY-US42V2 y realizar pruebas de montaje.
-    </li>
-    <li><strong>Agosto 9</strong><br>
-      <strong>Actividad Realizada</strong>: Encontramos otros proyectos relacionados y recibimos los sensores GY-US42V2.<br>
-      <strong>Resultados</strong>: Se obtuvo una comprensión más detallada de los sensores, aunque con menos información disponible en comparación con el HC-SR04.<br>
-      <strong>Próximos Pasos</strong>: Integrar los GY-US42V2 en el prototipo y realizar pruebas iniciales.
-    </li>
-    <li><strong>Agosto 15</strong><br>
-      <strong>Actividad Realizada</strong>: Continuamos investigando el sensor GY-US42V2 y consultamos recursos adicionales para obtener información sobre su funcionamiento.<br>
-      <strong>Próximos Pasos</strong>: Utilizar la información recopilada para desarrollar y programar el sensor GY-US42V2.
-    </li>
-    <li><strong>Agosto 19</strong><br>
-      <strong>Actividad Realizada</strong>: Utilizamos un código diseñado para el GY-US42V2, pero el sensor no proporcionó lecturas correctas.<br>
-      <strong>Soluciones</strong>: Revisar y ajustar el código y las conexiones físicas del sensor.<br>
-      <strong>Próximos Pasos</strong>: Corregir el código y realizar pruebas diagnósticas.
-    </li>
-    <li><strong>Agosto 21</strong><br>
-      <strong>Actividad Realizada</strong>: Identificamos que el sensor GY-US42V2 ofrece tres modos de operación: I2C, PWM y UART.<br>
-      <strong>Resultados</strong>: Comprensión mejorada de las capacidades del sensor y sus modos.<br>
-      <strong>Próximos Pasos</strong>: Evaluar cada modo de operación para determinar el más adecuado.
+    <li><strong>Día 15/Fecha: 8 de Junio de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Intentamos de entrar a el Raspberry Pi pero este se quedaba en una pantalla en negro con un cursor blanco parpadeando en la esquina izquierda superior.
+.<br>
+      <strong>Resultados</strong>: El Raspberry se estaba tomando considerablemente más tiempo de lo que normalmente se tomaba al iniciar.
+<br>
+     <li>
+    <li><strong>Día 16/Fecha: 18 de Junio de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Volvimos a “image” el Raspberry Pi (básicamente seguimos lo que hicimos el día 6).
+
+
+     
+    <li><strong>Día 17/Fecha: 22 de Junio de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Fuimos a este sitio web:
+Getting Started with YOLO Object and Animal Recognition on the Raspberry Pi - Tutorial Australia
+<br>
+      
+    <li><strong>Día 18/Fecha: 25 de Junio de 2025</strong><br>
+      <strong>Actividad Realizada</strong>: Entramos a Thonny y lo cambiamos a “modo regular”<br>
+    
     </li>
     <li><strong>Agosto 22</strong><br>
       <strong>Actividad Realizada</strong>: Utilizamos el modo I2C del GY-US42V2, pero no logramos obtener resultados válidos.<br>
