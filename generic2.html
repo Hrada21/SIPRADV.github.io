@@ -215,10 +215,52 @@ Getting Started with YOLO Object and Animal Recognition on the Raspberry Pi - Tu
       <strong>Actividad Realizada</strong>: Buscamos modelo adecuado para calles, pasos peatonales, árboles, etc. en el internet donde encontramos varios sitios web.
     </li>
 
-		   <li><strong>Día 26/Fecha: 23 de Julio de 2025
+		   <li><strong>Día 27/Fecha: 25 de Julio de 2025
 </strong><br>
-      <strong>Actividad Realizada</strong>: Buscamos modelo adecuado para calles, pasos peatonales, árboles, etc. en el internet donde encontramos varios sitios web.
+      <strong>Actividad Realizada</strong>: Continuamos investigando modelos pero nos dimos cuenta que la gran mayoría son para reconocimiento de señales de transito, placas de auto o para autos que son autónomos en la calle. (Esto no nos funcionaria ya que el usuario no comuna en las calles sino en las aceras o a los costados de la calle, no en todo el medio).
+
+		  <li><strong>Día 28/Fecha: 27 de Julio de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Intentamos crear nuestro propio modelo.
     </li>
+		  <li><strong>Día 29/Fecha: 30 de Julio de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>:  Seguimos recolectando imágenes de las calles intentando capturar varios ángulos y puntos de vista de diferentes objetos comunes en las calles (Autos, árboles, sillas, personas, etc.).
+    </li>
+		  <li><strong>Día 30/Fecha: 1 de Agosto de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Evaluamos dataset recolectado y son más de 300 fotos, lo cual entrar a label-studio y etiquetar va a consumir demasiado tiempo. Además un modelo basado en 300-400 fotos no es un modelo muy exacto o preciso..
+    </li>
+		  <li><strong>Día 31/Fecha: 3 de Agosto de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: En lugar de crear un modelo nuevo, decidimos integrar un LLM a la librería COCO ya utilizada por el yolov8..
+    </li>
+		  <li><strong>Día 32/Fecha: 6 de Agosto de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Obtuvimos un error de que el Raspberry Pi no tiene pyttsx3 (la librería de texto a voz.
+    </li>
+		  <li><strong>Día 33/Fecha: 8 de Agosto de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Al probar el código nos apareció un error de que no se detectaba la librería tflite_runtime (ModuleNotFoundError: No module named 'tflite_runtime'). Instalamos tflite_runtime en la terminal .
+    </li>
+		  <li><strong>Día 34/Fecha: 10 de Agosto de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>:  Probamos que el Coral funcionara con el código.
+    </li>
+		  <li><strong>Día 35/Fecha: 13 de Agosto de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Probamos el código sin el uso de Coral, utilizando TensorFlow Lite en CPU.
+    </li>
+		  <li><strong>Día 36/Fecha: 14 de Agosto de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Corregimos los errores.
+    </li>
+		  <li><strong>Día 37/Fecha: 15 de Agosto de 2025
+</strong><br>
+      <strong>Actividad Realizada</strong>: Probamos nuevamente el Google USB Coral Accelerator pero nos salieron problemas de vuelta.
+    </li>
+		
+		  
   </ul>
 </div>
 							</section>
