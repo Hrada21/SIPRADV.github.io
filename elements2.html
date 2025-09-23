@@ -117,7 +117,7 @@ Sin embargo, el estudio también identificó un desafío importante: el tamaño 
 										
 									
 										<h2>Hipótesis</h2>
-										<p>La implementación de un sistema de detección de obstáculos basado en sensores ultrasónicos avanzados (GY-US42V2) y audio espacial direccional en dispositivos de asistencia para personas ciegas, permitirá mejorar significativamente su percepción espacial y reducir la incidencia de colisiones.</p>
+										<p>El prototipo será capaz de reducir el peligro de las personas visualmente discapacitadas y les dará una mejor percepción espacial de su entorno. El sistema demostrará mayor eficiencia y mejores funciones.</p>
 
 										<h2 style="font-size: 1.5em;"><strong>Metodología</strong></h2>
 
@@ -134,98 +134,46 @@ Sin embargo, el estudio también identificó un desafío importante: el tamaño 
   <li>1 - Webcam C270 Logitech</li>
 </ul>
 
-<strong>Conexión del Arduino Nano:</strong>
-<ul>
-  <li>Alimentar el Arduino Nano conectando la batería al pin Vin y GND.</li>
-  <li>Asegúrate de que todos los componentes comparten una conexión a GND para un circuito común.</li>
-</ul>
+<strong>Diagrama físico del sistema</strong>
 
-<strong>Conexión de los Sensores GY-US42V2 (UART Mode):</strong>
-<ul>
-  <li>Conectar el pin VCC de cada sensor al pin 5V del Arduino Nano.</li>
-  <li>Conectar el pin GND de cada sensor al pin GND del Arduino Nano.</li>
-  <li>Para la comunicación UART, conectar los pines TX de los sensores al pin RX (D0) del Arduino Nano, y los pines RX de los sensores al pin TX (D1) del Arduino Nano.</li>
-  <li>Si es necesario, añadir resistencias o un divisor de voltaje en las líneas de UART para estabilizar la señal.</li>
-</ul>
+<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>	
 
-<strong>Conexión del DFPlayer Mini:</strong>
-<ul>
-  <li>Conectar el pin VCC del DFPlayer Mini al pin 5V del Arduino Nano.</li>
-  <li>Conectar el pin GND del DFPlayer Mini al pin GND del Arduino Nano.</li>
-  <li>Conectar el pin RX del DFPlayer Mini al pin digital D6 del Arduino Nano para la comunicación en serie.</li>
-  <li>Conectar los pines de salida de audio SPK+ y SPK- a los dos mini altavoces.</li>
-</ul>
 
-<strong>Conexión de los LEDs:</strong>
-<ul>
-  <li>Conectar el ánodo (pata larga) de cada LED a los pines digitales D2, D3, D4 y D5 del Arduino Nano.</li>
-  <li>Conectar una resistencia de 220Ω en serie entre cada ánodo de LED y el pin del Arduino para limitar la corriente.</li>
-  <li>Conectar el cátodo (pata corta) de cada LED a GND.</li>
-</ul>
+<strong>Diagrama conceptual</strong>
 
-<strong>Programación del Arduino Nano:</strong>
-<ul>
-  <li>Escribir el código para que el Arduino Nano reciba datos de los sensores GY-US42V2 y controle los LEDs según la distancia detectada.</li>
-  <li>Añadir la lógica para que el DFPlayer Mini reproduzca un sonido si los sensores detectan un objeto en una distancia menor a un umbral específico (por ejemplo, 20 cm).</li>
-  <li>Asegurarse de que los LEDs enciendan cuando los sensores detecten objetos, proporcionando una indicación visual de que los sensores están funcionando correctamente.</li>
-</ul>
+<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>	
 
-<strong>Pruebas del Circuito:</strong>
-<ul>
-  <li>Alimentar el circuito y verificar que los sensores GY-US42V2 funcionan correctamente midiendo distancias.</li>
-  <li>Probar los LEDs para asegurarse de que se encienden cuando un objeto es detectado dentro del rango especificado.</li>
-  <li>Probar el DFPlayer Mini para asegurarse de que reproduce el sonido desde los altavoces cuando se detecta un objeto cercano.</li>
-  <li>Ajustar la programación o las conexiones según los resultados de las pruebas.</li>
-</ul>
-
-<strong>Optimización y Ajustes:</strong>
-<ul>
-  <li>Si es necesario, ajustar las posiciones de los sensores para evitar interferencias o mejorar la precisión de la detección.</li>
-  <li>Verificar el rendimiento de la batería y optimizar el consumo de energía si es posible.</li>
-</ul>
-
-<strong>Diseño del prototipo y programación</strong>
-<p>Se implementaron diversos códigos, con resultados variables. Se probaron diferentes métodos, cada uno con su correspondiente código (todos los códigos se encuentran en el anexo).</p>
-		<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
-		<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>	
-		<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
-		<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>	
-		<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>	
-										<h2>Conclusiones y recomendaciones</h2>
-										<p>Con el uso de un Arduino Nano, sensores ultrasónicos y un reproductor de música, se desarrolló un prototipo funcional diseñado para asistir a personas con discapacidad. Este dispositivo facilita la detección de obstáculos y proporciona retroalimentación auditiva, contribuyendo a mejorar su movilidad y seguridad.</p>
-
+<strong>Resultados</strong>
+<p>Los resultados que obtuvimos gracias al sistema basado en Raspberry Pi 5, reconocimiento de objetos y un modelo de lenguaje demuestra cómo podemos unir varias áreas de la tecnología juntas como la visión por computadora y procesamiento de lenguaje natural en un mismo dispositivo de manera local. Este logro ejecutar las instrucciones y objetivo proyectado. El Raspberry Pi 5 ejecutaba la detección de objetos en tiempo real de manera eficaz, precisa y fluida. Posteriormente, el LLM interpretó la información recolectada por la cámara y le dio descripciones comprensibles y contextuales que ayudan al usuario. Este abre posibilidades para aplicaciones de asistencia, navegación autónoma y educación sin necesidad de conexión a internet. No es un sistema perfecto, sin embargo logramos entender que es posible crear sistemas como este para facilitar el día a día a las personas que más lo necesitan.
+<p>										
+		
 <p>Con base en los resultados obtenidos, se proponen las siguientes recomendaciones para mejorar el prototipo y su funcionalidad:</p>
 
-<strong>Evaluación de sensores:</strong>
-<p>Comparar el rendimiento entre los sensores HC-SR04 y GY-US42V2 para determinar cuál se adapta mejor al proyecto.</p>
+<strong>Implementar un modelo adaptado al entorno local</strong>
+<p>Es importante que el sistema utilice un modelo entrenado y ajustado específicamente para las condiciones de Panamá. Esto incluye no sólo el contexto urbano y ambiental, sino también la adaptación a las necesidades de los usuarios que se desplazan y transitan diariamente por las calles.</p>
 
-<strong>Uso del modo UART:</strong>
-<p>Priorizar el modo UART en los sensores GY-US42V2 sobre PWM o I2C para mejorar la estabilidad y transmisión de datos.</p>
+<strong>Reducir el tamaño del dispositivo</strong>
+<p>Se recomienda trabajar en la disminución de las dimensiones y el peso del sistema, de manera que sea más cómodo y ergonómico para el usuario. Esto contribuirá a que el dispositivo sea menos invasivo y más práctico para su uso diario.
+</p>
 
-<strong>Fuente de energía:</strong>
-<p>Seleccionar la mejor fuente de energía en función del consumo total del proyecto, considerando opciones como baterías recargables o LIPO.</p>
+<strong>Optimizar el sistema de audio</strong>
+<p>Es fundamental que la retroalimentación auditiva sea más clara, intuitiva y fácil de interpretar. Un sistema de audio mejorado permitirá que los usuarios comprendan de forma inmediata la información que reciben, facilitando la toma de decisiones rápidas y seguras en su desplazamiento.
+</p>
 
-<strong>Optimización del sistema de sonido:</strong>
-<p>Implementar retroalimentación auditiva con distintos tonos o volúmenes según la proximidad de los obstáculos.</p>
 
-<strong>Spacial audio:</strong>
-<p>Incorporar sonido direccional, de manera que el usuario reciba la señal auditiva desde la dirección en que se detecta un obstáculo.</p>
-
-<strong>Reducción de tamaño y peso:</strong>
-<p>Diseñar una carcasa más compacta para facilitar el uso del dispositivo.</p>
-
-<strong>Pruebas en distintos entornos:</strong>
-<p>Realizar pruebas en diversas condiciones para asegurar un rendimiento confiable en diferentes situaciones.</p>
-
-<strong>Compatibilidad:</strong>
-<p>Explorar la integración con otros dispositivos de asistencia para aumentar su versatilidad.</p>
 									<h2>Referencias bibliográficas</h2>
 									<ol>
-    <li>Lee, J., Smith, R., & Johnson, T. (2022). Advances in Ultrasonic Sensor Technology. <i>Journal of Assistive Technologies.</i></li>
-    <li>Miller, A. (2019). Spatial Audio for Accessibility. <i>Audio Engineering Society.</i></li>
-    <li>Smith, K., & Johnson, M. (2020). Technological Innovations in Mobility Assistance for the Visually Impaired. <i>Disability and Rehabilitation.</i></li>
-    <li>Tactile, R. (2018). Exploring Spatial Perception in Individuals with Visual Impairments. <i>Journal of Visual Impairment & Blindness.</i></li>
-    <li>Wang, X., & Chen, Y. (2021). Integrating Sensor and Audio Feedback Systems for Enhanced Navigation. <i>IEEE Transactions on Human-Machine Systems.</i></li>
+    <li>Getting Started with YOLO Object and Animal Recognition on the Raspberry Pi - Tutorial Australia. (2024, September 27). Core Electronics. https://core-electronics.com.au/guides/raspberry-pi/getting-started-with-yolo-object-and-animal-recognition-on-the-raspberry-pi/<li></li>
+
+    <li>DIY Engineers. (2024, October 25). Boost Your AI Game on Raspberry Pi with Coral USB TPU – Full Setup Guide. YouTube. https://www.youtube.com/watch?v=TRxR74qA-5E</i></li>
+    <li>Core Electronics. (2024, September 26). YOLO Object and Animal Recognition on the Raspberry Pi 5 | Beginner Python Guide. YouTube. https://www.youtube.com/watch?v=XKIm_R_rIeQ
+</i></li>
+    <li>Ultralytics. (n.d.). COCO. Docs.ultralytics.com. Retrieved April 22, 2024, from https://docs.ultralytics.com/datasets/detect/coco/#sample-images-and-annotations
+</i></li>
+    <li>Taghipour Zarfsaz, B. (2021). A study on dual-memory architectures in incremental learning (Figure 3) [Figure]. ResearchGate. Retrieved from https://www.researchgate.net/figure/Object-detection-in-street-Source-5_fig3_350153670</li>
+		<li>Ultralytics. (n.d.). How to run YOLOv8: Easy setup guide. YOLOv8. Retrieved August 21, 2025, from https://docs.ultralytics.com
+</i></li>
+										
 </ol>
 
 									<hr />
